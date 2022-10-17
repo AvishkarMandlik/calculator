@@ -3,6 +3,20 @@
 <head>
     <title>calculator</title>
     <link rel="stylesheet" href="calcu.css"/>
+
+    <script>
+        function pressbutton(buttonvalue){
+            let caltext = document.querySelector(".input-screen").value + buttonvalue + "" ;
+            document.querySelector(".input-screen").value = caltext;
+        }
+        function calculate() {
+            let calText = document.querySelector(".input-screen").value;
+            document.querySelector(".input-screen").value = eval(calText);
+        }
+        function clearScreen() {
+            document.querySelector(".input-screen").value = "";
+        }
+    </script>
 </head>
 <body>
 <!--these is caculator code-->
@@ -11,45 +25,45 @@
         <span class="l-btn">* * * *</span>
         <input type="text" class="input-screen"/>
         <div class="row">
-            <button class="btn">M</button>
-            <button class="btn">M+</button>
-            <button class="btn">M-</button>
-            <button class="btn">MR</button>
-            <button class="btn">MC</button>
-            <button class="btn">Gt</button>
+            <button class="btn" onclick="pressbutton">M</button>
+            <button class="btn" onclick="pressbutton">M+</button>
+            <button class="btn" onclick="pressbutton">M-</button>
+            <button class="btn" onclick="pressbutton">MR</button>
+            <button class="btn" onclick="pressbutton">MC</button>
+            <button class="btn" onclick="pressbutton">Gt</button>
         </div>
 
         <div class="row">
-            <button class="btn">+/-</button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">%</button>
-            <button class="btn">√</button>
+            <button class="btn" onclick="pressbutton('+/-')">+/-</button>
+            <button class="btn" onclick="pressbutton('7')">7</button>
+            <button class="btn" onclick="pressbutton('8')">8</button>
+            <button class="btn" onclick="pressbutton('9')">9</button>
+            <button class="btn" onclick="pressbutton('%')">%</button>
+            <button class="btn" onclick="pressbutton('<')"><</button>
         </div>
         <div class="row">
-            <button class="btn">></button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">X</button>
-            <button class="btn">÷</button>
+            <button class="btn" onclick="pressbutton('>')">></button>
+            <button class="btn" onclick="pressbutton('4')">4</button>
+            <button class="btn" onclick="pressbutton('5')">5</button>
+            <button class="btn" onclick="pressbutton('6')">6</button>
+            <button class="btn" onclick="pressbutton('*')">X</button>
+            <button class="btn" onclick="pressbutton('/')">÷</button>
         </div>
         <div class="row">
-            <button class="btn">AC</button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn btn1">+</button>
-            <button class="btn">-</button>
+            <button class="btn" onclick="clearScreen()">AC</button>
+            <button class="btn" onclick="pressbutton('1')">1</button>
+            <button class="btn" onclick="pressbutton('2')">2</button>
+            <button class="btn" onclick="pressbutton('3')">3</button>
+            <button class="btn btn1" onclick="pressbutton('+')">+</button>
+            <button class="btn" onclick="pressbutton('-')">-</button>
         </div>
         <div class="row">
-            <button class="btn on">ON<br/></button>
-            <button class="btn">0</button>
-            <button class="btn">00</button>
-            <button class="btn">.</button>
-            <button class="btn on">Off</button>
-            <button class="btn">=</button>
+            <button class="btn on" onclick="pressbutton">ON<br/></button>
+            <button class="btn" onclick="pressbutton('0')">0</button>
+            <button class="btn" onclick="pressbutton('00')">00</button>
+            <button class="btn" onclick="pressbutton('.')">.</button>
+            <button class="btn on" onclick="pressbutton">Off</button>
+            <button class="btn" onclick="calculate()">=</button>
         </div>
     </div>   
 </body>
