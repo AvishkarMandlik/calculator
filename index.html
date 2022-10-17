@@ -16,30 +16,34 @@
         function clearScreen() {
             document.querySelector(".input-screen").value = "";
         }
+        function clearone(){
+           let back = document.querySelector(".input-screen").value ;
+           document.querySelector(".input-screen").value = back.substring(0,back.length-1);
+        }
     </script>
 </head>
 <body>
 <!--these is caculator code-->
     <div class="calculator-container">
         <span class="brand">AVISHKAR</span>
-        <span class="l-btn">* * * *</span>
+        <span class="stars">* * * *</span>
         <input type="text" class="input-screen"/>
         <div class="row">
-            <button class="btn" onclick="pressbutton">M</button>
-            <button class="btn" onclick="pressbutton">M+</button>
-            <button class="btn" onclick="pressbutton">M-</button>
-            <button class="btn" onclick="pressbutton">MR</button>
-            <button class="btn" onclick="pressbutton">MC</button>
-            <button class="btn" onclick="pressbutton">Gt</button>
+            <button class="btn top" onclick="pressbutton('**2')">X<sup>2</sup></button>
+            <button class="btn" onclick="pressbutton('**3')">X<sup>3</sup></button>
+            <button class="btn" onclick="pressbutton('**4')">X<sup>4</sup></button>
+            <button class="btn" onclick="pressbutton('**5')">X<sup>5</sup></button>
+            <button class="btn OF" onclick="pressbutton()">OF</button>
+            <button class="btn ON" onclick="pressbutton()">ON</button>
         </div>
 
         <div class="row">
-            <button class="btn" onclick="pressbutton('+/-')">+/-</button>
+            <button class="btn" onclick="pressbutton('^')">^</button>
             <button class="btn" onclick="pressbutton('7')">7</button>
             <button class="btn" onclick="pressbutton('8')">8</button>
             <button class="btn" onclick="pressbutton('9')">9</button>
             <button class="btn" onclick="pressbutton('%')">%</button>
-            <button class="btn" onclick="pressbutton('<')"><</button>
+            <button class="btn" onclick="pressbutton('+')">+</button>
         </div>
         <div class="row">
             <button class="btn" onclick="pressbutton('>')">></button>
@@ -50,20 +54,20 @@
             <button class="btn" onclick="pressbutton('/')">÷</button>
         </div>
         <div class="row">
-            <button class="btn" onclick="clearScreen()">AC</button>
+            <button class="btn" onclick="pressbutton('<')"><</button>
             <button class="btn" onclick="pressbutton('1')">1</button>
             <button class="btn" onclick="pressbutton('2')">2</button>
             <button class="btn" onclick="pressbutton('3')">3</button>
-            <button class="btn btn1" onclick="pressbutton('+')">+</button>
-            <button class="btn" onclick="pressbutton('-')">-</button>
+            <button class="btn btn1" onclick="pressbutton('-')">-</button>
+            <button class="btn" onclick="calculate('=')">=</button>
         </div>
         <div class="row">
-            <button class="btn on" onclick="pressbutton">ON<br/></button>
+            <button class="btn" onclick="pressbutton('3.14')">π</button>
             <button class="btn" onclick="pressbutton('0')">0</button>
             <button class="btn" onclick="pressbutton('00')">00</button>
             <button class="btn" onclick="pressbutton('.')">.</button>
-            <button class="btn on" onclick="pressbutton">Off</button>
-            <button class="btn" onclick="calculate()">=</button>
+            <button class="btn backbtn" onclick="clearone('cl')"> ⌫</button>
+            <button class="btn" onclick="clearScreen()">AC</button>
         </div>
     </div>   
 </body>
