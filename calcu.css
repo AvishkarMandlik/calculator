@@ -14,7 +14,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
-
 }
 .btn{
     height: 35px;
@@ -29,16 +28,23 @@
 .btn:hover{
     box-shadow: 1px 2px 4px 3px #808080;
 }
+.ON{
+    background-color: green;
+}
+.OF{
+    background-color: red;
+}
 .input-screen{
     height: 60px;
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 3px solid black;
     background-color: #ecf2f8;
     font-size: 60px;
 }
 .on{
-    font-size: 11px;
+    font-size: 13px;
     text-align: center;
 }
 .brand{
@@ -48,7 +54,7 @@
     margin: 3px;
     color: aliceblue;
 }
-.l-btn{
+.stars{
     margin-left: 400px;
-    color: azure;   
+    color: yellow; 
 }    
