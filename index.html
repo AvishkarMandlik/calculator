@@ -27,14 +27,14 @@
     <div class="calculator-container">
         <span class="brand">AVISHKAR</span>
         <span class="stars">* * * *</span>
-        <input type="text" class="input-screen"/>
+        <input type="text" class="input-screen" id="name"/>
         <div class="row">
             <button class="btn top" onclick="pressbutton('**2')">X<sup>2</sup></button>
             <button class="btn" onclick="pressbutton('**3')">X<sup>3</sup></button>
             <button class="btn" onclick="pressbutton('**4')">X<sup>4</sup></button>
             <button class="btn" onclick="pressbutton('**5')">X<sup>5</sup></button>
-            <button class="btn OF" onclick="pressbutton()">OF</button>
-            <button class="btn ON" onclick="pressbutton()">ON</button>
+            <button class="btn OF" id="submit" onclick="OFF()">OF</button>
+            <button class="btn ON" onclick="ON()">ON</button>
         </div>
 
         <div class="row">
