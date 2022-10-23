@@ -1,6 +1,7 @@
 .calculator-container{
-    background-color: #2d5986;
-    height: 440px;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(168deg, #FFFFFF 0%, #6284FF 31%, #f800ff 100%);
+    height: 450px;
     width: 450px;
     border-radius: 10px;
     border: solid 1px white;
@@ -41,7 +42,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
     border: 3px solid black;
-    background-color: #ecf2f8;
+    background-color: grey;
     font-size: 60px;
 }
 .on{
@@ -49,11 +50,13 @@
     text-align: center;
 }
 .brand{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     margin: 3px;
-    color: aliceblue;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(168deg, #FFFFFF 0%, #6284FF 31%, #f800ff 100%);
+    border-radius: 10px;    
 }
 .stars{
     margin-left: 400px;
