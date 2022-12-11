@@ -2,25 +2,7 @@
 <html lang="en">
 <head>
     <title>calculator</title>
-    <link rel="stylesheet" href="./style/calculator.css"/>
-
-    <script>
-        function pressbutton(buttonvalue){
-            let caltext = document.querySelector(".input-screen").value + buttonvalue + "" ;
-            document.querySelector(".input-screen").value = caltext;
-        }
-        function calculate() {
-            let calText = document.querySelector(".input-screen").value;
-            document.querySelector(".input-screen").value = eval(calText);
-        }
-        function clearScreen() {
-            document.querySelector(".input-screen").value = "";
-        }
-        function clearone(){
-           let back = document.querySelector(".input-screen").value ;
-           document.querySelector(".input-screen").value = back.substring(0,back.length-1);
-        }
-    </script>
+    <link rel="stylesheet" href="./style/calculator.css"/> 
 </head>
 <body>
 <!--These is My active_caculator -->
@@ -70,5 +52,6 @@
             <button class="btn" onclick="clearScreen()">AC</button>
         </div>
     </div>   
+    <script src="./script/calculator.js"></script>
 </body>
 </html>
