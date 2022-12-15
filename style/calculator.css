@@ -6,9 +6,11 @@
     border-radius: 10px;
     border: solid 1px white;
     margin: auto;
+    margin-top: 50px;
     padding: 20px;
     display: block;
-    box-shadow: 10px 10px 10px 10px #808080;  
+    box-shadow: 1px 1px 16px 4px #808080;  
+    position: relative;
 }
 .row{
     display: flex;
@@ -54,11 +56,14 @@
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     margin: 3px;
-    background-color: #FFFFFF;
-    background-image: linear-gradient(168deg, #FFFFFF 0%, #6284FF 31%, #f800ff 100%);
-    border-radius: 10px;    
+    padding: 10px;
+    background-color: #f761f7;
+    background-image: linear-gradient(270deg, #f761f7 0%, #46ccdc 100%);
+    border-radius: 5px;    
 }
 .stars{
-    margin-left: 400px;
+   position: absolute;
     color: yellow; 
+    right: 20px;
+    font-size: 30px;
 }    
